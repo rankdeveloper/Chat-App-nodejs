@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Chat App</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="header">
+        <h2>Real Time Chating App</h2>
+
+    </div>
+    <p id="typing-status" style="color: white;"> </p>
+    <div id="messages">
+
+        <!-- <p class="chat-message">hello ther how <span class="timeStamp" style="text-align: right;">11:31:59 PM</span></p>
+        <p class="chat-message right">hello ther how</p>
+        <p class="chat-message">hello ther how</p> -->
+
+    </div>
+    <form id="form" action="">
+        <input id="input" placeholder="Type message..." autocomplete="off" oninput="handleTyping()" onblur="stopTyping()" />
+        <button>Send</button>
+        <button id="toggle-btn">Disconnect</button>
+    </form>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+   <script src="./client-script.js"></script>
+
+</body>
+
+</html>

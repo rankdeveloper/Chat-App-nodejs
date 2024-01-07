@@ -1,0 +1,21 @@
+{
+  "name": "real_time_chatapp",
+  "version": "1.0.0",
+  "description": "real time chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart" : "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "chatapp"
+  ],
+  "author": "Rankush",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2",
+    "socket.io": "^4.7.2"
+  }
+}
