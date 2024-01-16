@@ -12,7 +12,7 @@ const io = new Server(server , {connectionStateRecovery:{}});
 
 app.use(express.static(path.join(__dirname , 'public')))
 app.get('/', (req, res) => {
-  res.sendFile('./index.html')
+  res.render('./index.html')
 });
 
 const users = {}
