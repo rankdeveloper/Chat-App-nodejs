@@ -3,11 +3,14 @@ const { createServer } = require('node:http');
 const { join } = require('node:path');
 const { Server } = require('socket.io');
 
+const path = require('path')
 const app = express();
 const server = createServer(app);
 const io = new Server(server , {connectionStateRecovery:{}});
 
-app.use(express.static('public'))
+// app.use(express.static('public'))
+
+app.use(express.static(path.join(__dirname , 'public')))
 app.get('/', (req, res) => {
   res.sendFile('./index.html')
 });
