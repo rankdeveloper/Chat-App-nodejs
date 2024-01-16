@@ -9,7 +9,7 @@ const io = new Server(server , {connectionStateRecovery:{}});
 
 app.use(express.static('public'))
 app.get('/', (req, res) => {
-  res.render('./index.html')
+  res.sendFile('./index.html')
 });
 
 const users = {}
